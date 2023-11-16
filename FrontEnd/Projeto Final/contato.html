@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div id="barra_superior">
+            <ul style="list-style-type: none">
+                <li><a href="index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>|</li>
+                <li><a href="area_administrativa.html">Área admin</a></li>
+            </ul>
+        </div>
+
+        <h2>Contato</h2>
+
+        <div id="area_contato">
+
+            <form onsubmit="return captMensagem()">
+                <label for="nome_form" class="form_title">Nome:</label><br>
+                <p><input type="text" id="nome_form" name="nome_form" placeholder="Informe seu nome"></p>
+                <label for="email_form" class="form_title">E-mail:</label><br>
+                <p><input type="email" id="email_form" name="email_form" placeholder="Informe seu email"></p>
+                <label for="msg_form" class="form_title">Mensagem:</label>
+                <p><textarea id="msg_form" name="msg_form" rows="10" cols="30" placeholder="Escreva sua mensagem!"></textarea></p>
+                <input type="submit" id="button_contato" value="Enviar">
+            </form>
+
+        </div>
+
+        <script src="jquery-3.6.4.min.js"></script>
+        <script src="api.js"></script>
+        <script src="script_contato.js"></script>
+
+    </body>
+
+</html>

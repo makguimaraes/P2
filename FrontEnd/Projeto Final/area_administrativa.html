@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Área Administrativa</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+    <body>
+
+        <div id="barra_superior">
+            <ul style="list-style-type: none">
+                <li><a href="index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>|</li>
+                <li><a href="area_administrativa.html">Área admin</a></li>
+            </ul>
+        </div>
+
+        <h2>Área Administrativa</h2>
+
+        <div id="area_administrativa">
+
+            <form id="loginForm" onsubmit="funcaoLogin(); return false">
+                <label for="login_form" class="form_title">Login:</label><br>
+                <input type="text" id="login_form" required><br><br>
+                <label for="senha_form" class="form_title">Senha:</label><br>
+                <input type="password" id="senha_form" required autocomplete="off"><br>
+                <input type="submit" id="button_admin" value="Entrar">
+            </form>
+
+        </div>
+
+        <script src="jquery-3.6.4.min.js"></script>
+        <script src="api.js"></script>
+        <script src="script_login.js"></script>
+
+    </body>
+
+</html>
